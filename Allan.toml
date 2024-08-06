@@ -1,0 +1,6 @@
+[package]
+name = "allan"
+authors = [
+    "LocalTrash"
+]
+cstd = 20
