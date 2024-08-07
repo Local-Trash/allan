@@ -20,18 +20,13 @@ Builder::Builder() {
     cppverison = allan["package"]["cstd"].value_or(20);
     toml::array* libraries = allan["depen"]["libs"].as_array();
 
-    std::cout <<"Not Here" << std::endl;
-
     if (libraries->is_value()) {
-        std::cout <<"Not Here" << std::endl;
         for (const toml::node& lib : *libraries) {
             std::string push;
             push = lib.as_string()->get();
             libs.push_back(push);
         }
     }
-
-    std::cout <<"Not Here" << std::endl;
 }
 
 void Builder::build() {

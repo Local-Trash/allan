@@ -45,7 +45,6 @@ static int parse(char* argv[], int argc) {
 	}
 
 	if (*argv[1] == *"build") {
-		std::cout << "MMM" << std::endl;
 		Builder builder = Builder();
 		builder.build();
 	}
