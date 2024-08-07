@@ -47,7 +47,7 @@ void Builder::build() {
     command += " -o build/";
     command += name;
     #ifdef _WIN32 || _WIN64
-    command += ".exe";
+    command += ".exe ";
     #endif
     //clang++ src/*.cpp -Iincludes/ -Lbin/ -o name.exe
 
